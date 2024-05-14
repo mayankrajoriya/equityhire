@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
+.active{
+  background-color: yellow;
+  color:black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Sans", sans-serif;
+}
+body{
+  color:black;
+}
+
+a{
+ color: #fff;
+  text-decoration: none;
+}
+
+/* Navbarf section styles */
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  
+}
+nav .title{
+  font: size 2.5rem;
+  font-weight: 300;
+  margin:1rem ;
+  color: white;
+  background: -webkit-linear-gradient(#eee, rgb(219, 248, 57));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul{
+  display: flex ;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #eee;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+nav ul li a:not(.active)hover{
+  background: #172554;
+}
+
+nav .menu{
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+nav .menu span{
+  height: 0.4rem;
+  width: 100%;
+  background-color:#fff ;
+  border-radius: 0.2rem;
+}
+
+/* home main */
+
+
+.home{
+  background-image: url("img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 2px solid;
+}
+
+.hero-section h1{
+  font-size:3.5rem;
+  color: #eee;
+}
+
+.hero-section h1 span{
+  color: yellow;
+}
+
+.hero-section p{
+    font-size:large;
+    color: #eee;
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 2px solid white;
+}
+
+.mid{
+  text-align: center; 
+}
+.mid h4{
+  color: skyblue;
+}
+.mid p{
+  color: #eee;
+}
+
+/* cards */
+
+.main-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.card{
+  margin-right:10px ;
+}
+.head-equity{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  margin:50px;
+  height: 100px;
+  color: skyblue;
+  
+  border-radius: 10px;
+}
+
+.head-equity span{
+  color: yellow;
+}
+
+.card-body{
+  background: #000;
+  color: #eee;
+  border-radius: 10px;
+}
+
+.card-title{
+  color: green;
+}
+
+.para{
+  text-align: center;
+  color: #eee;
+}
+.para p span{
+  color: crimson;
+  font-weight: 1000;
+}
+
+
+
+/* ABout css */
+.main-about h1{
+  height: 10vh;
+  padding-top: 10px;
+  border-bottom:2px solid ;
+  width: 18vw;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+h3{
+  font-weight: 300;
+  border-bottom:2px solid ;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.mission p span{
+ font-weight: 700;
+
+}
+.main-para{
+  font-weight: 300;
+  padding-bottom: px;
+}
+
+.end-head{
+  display: flex;
+
+}
+.end-head div{
+  border: 2px solid;
+  transition: 1s linear ;
+  border-radius: 10px;
+  margin-right:10px ;
+  
+}
+
+.end-head div:hover{
+  background-color:skyblue;
+  
+  
+  
+}
+
+
+
+/* industry css */
+
+.industry{
+  text-align: center;
+}
+
+.industry div{
+  margin: 10px;
+  padding: 20px;
+  transition: 1s ease-in-out;
+  border-radius: 25px;
+}
+
+.industry div h2{
+  font-weight:700 ;
+}
+
+.industry div p{
+   font-weight: 300;
+}
+
+.industry div:hover{
+  background:yellow;
+}
+
+
+/* footer */
+
+.footer{
+  background: brown;
+  height: 30px;
+  text-align: center;
+}
+
+
+
+/* responsive */
+@media (max-width:480px)  {
+
+  nav .menu{
+    display: flex;
+  }
+  
+  nav{
+    flex-direction: column;
+    align-items:start ;
+  }
+  nav ul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open{
+    display: flex;
+  }
+
+  nav ul li{
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a{
+    margin: 0.2rem 0.5rem;
+  }
+ 
+
+
+
+  .hero-section h1{
+    font-size: 30px;
+  }
+  .hero-section p{
+    font-size: 13px;
+  }
+  .card{
+    margin-bottom:10px ;
+  }
+  .end-head{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .end-head div{
+    margin-bottom:10px ;
+  }
+
+}
