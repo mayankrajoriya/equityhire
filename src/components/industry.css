@@ -1,0 +1,96 @@
+.odd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+}
+
+.even {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+}
+
+.odd-content h4 {
+  color: yellow;
+  margin-bottom: 30px;
+  width: 500px;
+}
+.even-content h4 {
+  color: yellow;
+  margin-bottom: 30px;
+  width: 500px;
+}
+
+.odd-content p {
+  font-size: 15px;
+  font-weight: 200;
+  width: 500px;
+}
+.even-content p {
+  font-size: 15px;
+  font-weight: 200;
+  width: 500px;
+}
+
+
+
+img {
+  width: 600px;
+  height: 400px;
+}
+
+@media (max-width: 680px) {
+  
+  .industry{
+    margin-left: 30px;
+  }
+
+  img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .odd-content h4 {
+    color: yellow;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  .even-content h4 {
+    color: yellow;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+
+  .odd-content p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 300px;
+  }
+  .even-content p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 300px;
+  }
+}
+
+
+@media (min-width: 720px){
+    .odd-content {
+        border-right: 2px solid;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding-right: 30px;
+      }
+      
+      .even-content {
+        border-left: 2px solid;
+        border-radius: 10px;
+        margin-left: 30px;
+        padding-left: 30px;
+      }
+
+}

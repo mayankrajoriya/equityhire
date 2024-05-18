@@ -1,0 +1,111 @@
+
+/* home main */
+
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid;
+  }
+  
+  .hero-section h1{
+    color: #eee;
+  }
+  
+  .hero-section h1 span{
+    color: yellow;
+  }
+  
+  .hero-section p{
+      color: #eee;
+  }
+  
+  .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-top: 2px solid white;
+  }
+  
+  .mid{
+    text-align: center; 
+  }
+  .mid h4{
+    color: skyblue;
+    font-size:20px;
+    text-align: center;
+  }
+  .mid p{
+    color: #eee;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  /* cards */
+  
+  .main-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  
+  .card{
+    margin-right:10px ;
+  }
+  .head-equity{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    margin:50px;
+    height: 100px;
+    color: skyblue;
+    
+    border-radius: 10px;
+  }
+  
+  .head-equity span{
+    color: yellow;
+  }
+  .card{
+    background: transparent;
+   
+  }
+  .card-body{
+    
+    background: linear-gradient(-45deg, #23a5d5cb, #000, #23a5d593, #000);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    animation-name: card-box;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    color: #eee;
+  }
+  @keyframes card-box {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+
+  }
+  .card-title{
+    color: green;
+  }
+  
+  .para{
+    text-align: center;
+    color: #eee;
+  }
+  .para p span{
+    color: crimson;
+    font-weight: 1000;
+  }

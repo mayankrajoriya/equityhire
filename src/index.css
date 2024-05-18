@@ -13,9 +13,7 @@
   box-sizing: border-box;
   font-family: "Ubuntu Sans", sans-serif;
 }
-body{
-  color:black;
-}
+
 
 a{
  color: #fff;
@@ -29,11 +27,11 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  position: sticky;
-  top: 0;
+  /* background-color: black; */
   
 }
+
+
 nav .title{
   font: size 2.5rem;
   font-weight: 300;
@@ -78,190 +76,155 @@ nav .menu span{
   border-radius: 0.2rem;
 }
 
-/* home main */
-
-
-.home{
-  background-image: url("img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
-}
-
-.hero-section{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-top: 2px solid;
-}
-
-.hero-section h1{
-  font-size:3.5rem;
-  color: #eee;
-}
-
-.hero-section h1 span{
-  color: yellow;
-}
-
-.hero-section p{
-    font-size:large;
-    color: #eee;
-}
-
-.heading{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-top: 2px solid white;
-}
-
-.mid{
-  text-align: center; 
-}
-.mid h4{
-  color: skyblue;
-}
-.mid p{
-  color: #eee;
-}
-
-/* cards */
-
-.main-cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-}
-
-.card{
-  margin-right:10px ;
-}
-.head-equity{
-  text-align: center;
-  align-items: center;
-  display: flex;
-  padding: 20px;
-  margin:50px;
-  height: 100px;
-  color: skyblue;
-  
-  border-radius: 10px;
-}
-
-.head-equity span{
-  color: yellow;
-}
-
-.card-body{
-  background: #000;
-  color: #eee;
-  border-radius: 10px;
-}
-
-.card-title{
-  color: green;
-}
-
-.para{
-  text-align: center;
-  color: #eee;
-}
-.para p span{
-  color: crimson;
-  font-weight: 1000;
-}
 
 
 
 /* ABout css */
+.main-about{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  margin: 60px;
+  border-radius: 20px;
+  background:linear-gradient(0deg,rgba(11, 42, 105, 0.478),rgba(223, 9, 9, 0));
+    backdrop-filter: blur(5px);
+}
 .main-about h1{
-  height: 10vh;
+  text-align: center;
   padding-top: 10px;
   border-bottom:2px solid ;
   width: 18vw;
   font-weight: 800;
   margin-bottom: 20px;
+  color: yellow;
+}
+.main-about p{
+  width: 700px;
+  text-align: center;
+}
+
+.mission-main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 50px;
+}
+.mission-main p{
+   width: 500px;
+}
+.mission-content{
+  margin-right: 80px;
 }
 
 h3{
   font-weight: 300;
   border-bottom:2px solid ;
-  width: 150px;
+  width: 250px;
   margin-bottom: 20px;
 }
 
-.mission p span{
+.set{
+  margin:50px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.set-design{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.set-content{
+
+  background: linear-gradient(-45deg, #23a5d5cb, #000, #23a5d593, #000);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+@keyframes gradient {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+
+}
+.set-content p span{
  font-weight: 700;
 
 }
-.main-para{
-  font-weight: 300;
-  padding-bottom: px;
+.set-content p{
+  font-weight: 200;
 }
-
-.end-head{
+.join{
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.end-head div{
-  border: 2px solid;
-  transition: 1s linear ;
-  border-radius: 10px;
-  margin-right:10px ;
+.join-content{
+  width: 500px;
+}
+
+/* service section */
+
+
+
+.service1{
+  display: flex;
+  margin: 40px;
+}
+.section1{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  padding-left: 20px;
+  margin-left: 20px;
   
+  background: linear-gradient(-45deg, #23a5d5cb, #000, #23a5d593, #000);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
 }
 
-.end-head div:hover{
-  background-color:skyblue;
-  
-  
-  
+.section-para{
+  width: 500px;
+  font-weight: 50;
+  font-size: 12px;
 }
-
-
-
-/* industry css */
-
-.industry{
-  text-align: center;
+.section-para span{
+  font-weight: 700;
+  font-size: 20px;
 }
-
-.industry div{
-  margin: 10px;
-  padding: 20px;
-  transition: 1s ease-in-out;
-  border-radius: 25px;
-}
-
-.industry div h2{
-  font-weight:700 ;
-}
-
-.industry div p{
-   font-weight: 300;
-}
-
-.industry div:hover{
-  background:yellow;
-}
-
 
 /* footer */
 
 .footer{
-  background: brown;
-  height: 30px;
+  height: 60px;
   text-align: center;
+  border-top: 2px solid ;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-/* responsive */
-@media (max-width:480px)  {
+/* responsive  */
+ @media (max-width:720px)  {
 
   nav .menu{
     display: flex;
@@ -310,4 +273,61 @@ h3{
     margin-bottom:10px ;
   }
 
+  .main-about{
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-about h1{
+    width: 200px;
+  }
+  .main-about p{
+    width: 300px;
+  }
+  .mission-main{
+    margin-left: 35px;
+  }
+  .mission-content{
+    margin-top:30px ;
+
+  }
+  .mission-content h3{
+    text-align: center;
+    width: 300px;
+  }
+  .mission-content p{
+    width: 300px;
+    text-align: center;
+  }
+
+  .set h3{
+    text-align: center;
+  }
+
+
+  .service1{
+    flex-wrap: wrap;
+    margin: 0;
+    
+  }
+
+  .section1{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .section1 p{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .service1 img{
+    width: 400px;
+  }
 }
